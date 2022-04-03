@@ -7,8 +7,8 @@
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Log In" class="btn btn-success">
-        <a href="{% url 'signup' %}"class="btn btn-warning">Sign Up</a>
+        <input type="submit" value="Log In" class="btn btn-outline-success">
+        <a href="{% url 'signup' %}"class="btn btn-outline-warning">Sign Up</a>
     </form>
-    <a href="{% url 'password_change' %}">Forgot Password?</a>
+    <a href="{% url 'password_reset' %}">Forgot Password?</a>
 {% endblock content %}
