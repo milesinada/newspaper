@@ -3,14 +3,19 @@
 {% load static %}
 
 {% block title %}Home{% endblock title %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
 
 
 
 {% block content %}
-<h1>Hello,World</h1>
-<!-- <a href="{% url 'signup' %}">signup</a>
-<a href="{% url 'login' %}">login</a>
-<a href="{% url 'password_change' %}">PW Change</a>
-<a href="{% url 'about' %}">About</a>
-<a href="{% url 'logout' %}">Logout</a> -->
+<div class="landing">
+    <div class="landing-container">
+        <h1>Headlines Daily</h1>
+        <p>Welcome to Headlines Daily, where it's our mission to keep you informed on the latest headlines daily. Whether it's your first time here or millionth article posted, we welcome you to have a look at what our team see's daily! Click the link below to get started, reading article is free to all, if you would like to submit and article go ahead and follow the login page above! Happy reading!</p>
+        <a class="btn btn-lg btn-warning" aria-current="page" href="{% url 'articles_list' %}">Articles</a>
+
+
+    </div>
+
+</div>
 {% endblock content %}

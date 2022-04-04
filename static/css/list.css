@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+.list{
+    background-image: url('../img/newspaper.jpg');
+    width: auto;
+    height: 1000px;
+}
+.cards{
+    justify-content: center;
+    display: inline-flex;
+    margin: 40px 20px 20px 40px;
+    transition: transform .5s;
+    color: white;
+}
+.cards:hover{
+    transform: scale(1.05);
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.63);
+}
